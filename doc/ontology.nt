@@ -1,0 +1,769 @@
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM> <http://purl.org/dc/elements/1.1/creator> "Victoria Moyano Queipo"@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM> <http://purl.org/dc/elements/1.1/date> "27/04/2026"@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM> <http://purl.org/dc/elements/1.1/description> "La ODM es una ontología de dominio que representa información sobre dispositivos médicos que se comercializan en Europa.  Incluye información sobre dispositivos, fabricantes, riesgos, incidentes y correcciones de seguridad."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM> <http://purl.org/dc/elements/1.1/title> "Ontología de Dispositivos Médicos (ODM)"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to the incident that triggered it."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses Incident"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to its assigned risk class under MDR or IVDR."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has Risk Class"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its category or type according to the IMDRF classification."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> <http://www.w3.org/2000/01/rdf-schema#label> "has Risk Type"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the specific medical device that was involved in the adverse event."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the identified risk that caused or contributed to the adverse event."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#label> "is Associated With Risk"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to the country where it is legally registered. This property is transitive."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is Located In"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to the manufacturer responsible for its production and regulatory compliance."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Manufactured By"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to the regulatory framework (MDR or IVDR) under which it is authorised."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Regulated By"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The official authorisation number issued by the national competent authority to the manufacturer." .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization Number"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier of the medical device in the EUDAMED catalogue (e.g. DEV-001)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceId> <http://www.w3.org/2000/01/rdf-schema#label> "device Id"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial name of the medical device as registered in EUDAMED."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device Name"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "The number or description of device units affected by the FSCA."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices Affected"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#comment> "The Single Registration Number (SRN) assigned to the manufacturer in the EUDAMED system."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED SRN"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the adverse event actually occurred."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event Date"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the FSCA: Open or Closed."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/fscaStatus> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA Status"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag inferred by the reasoner indicating that the device has been involved in at least one serious incident and therefore presents a high risk flag."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> <http://www.w3.org/2000/01/rdf-schema#label> "has High Risk Flag"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The standardised code assigned to the risk according to the IMDRF nomenclature."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "IMDRF Code"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier of the incident report in EUDAMED."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentId> <http://www.w3.org/2000/01/rdf-schema#label> "incident Id"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the result or consequence of the incident for the patient or device." .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/incidentOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "incident Outcome"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended use of the medical device as declared by the manufacturer."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended Purpose"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating whether the device requires an energy source to operate."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is Active"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag inferred by the reasoner indicating that the incident is associated with a risk of critical severity level."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is Critical Incident"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating whether the device is designed to be implanted in the human body."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is Implantable"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating whether the device is designed for multiple uses."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is Reusable"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag inferred by the reasoner indicating that the device is currently subject to an active field safety corrective action (FSCA)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "is Under Corrective Action"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The full legal name of the manufacturer as registered with the competent authority."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/manufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer Name"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of the patient involved in the incident, if applicable."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient Age"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "The sex of the patient involved in the incident, if applicable."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "patient Sex"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the incident was officially reported to EUDAMED."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report Date"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName> <http://www.w3.org/2000/01/rdf-schema#comment> "The descriptive name of the identified risk."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/riskName> <http://www.w3.org/2000/01/rdf-schema#label> "risk Name"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of the risk: Critical, Serious or Moderate."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Unique Device Identifier - Device Identifier code assigned to the device."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "A medical device that requires an energy source other than that generated by the human body or gravity to operate."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "An implantable device that also depends on an energy source to function, such as a pacemaker or cochlear implant."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Active Implant"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country in which a manufacturer is registered or in which an incident has been reported."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "An action taken by a manufacturer to reduce a risk of death or serious deterioration associated with a device already on the market."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> <http://www.w3.org/2000/01/rdf-schema#label> "Field Safety Corrective Action"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk classification under the In Vitro Diagnostic Regulation (EU 2017/746): Class A, B, C or D."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR Risk Class"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableActiveDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ActiveImplant> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific subtype of active implant requiring both energy and permanent implantation, such as a ventricular assist device."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device designed to be fully or partially introduced into the human body and intended to remain after the procedure."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InSituCorrection
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action performed on the device at its current location without requiring its return to the manufacturer."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device used to perform tests on specimens taken from the human body, such as blood or tissue samples."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A notified adverse event involving a medical device that has or could have led to patient harm."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk classification under the Medical Device Regulation (EU 2017/745): Class I, IIa, IIb or III."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "MDR Risk Class"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Country> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isLocatedIn> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal entity that manufactures or fully refurbishes a medical device and is responsible for its compliance with applicable regulations."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isManufacturedBy> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskClass> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isRegulatedBy> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device registered in the EUDAMED catalogue under MDR or IVDR regulations."@es .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/NearMissIncident
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that did not result in patient harm but could have done so under different circumstances."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Near Miss Incident"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Recall
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "A field safety corrective action involving the removal or return of affected devices from the market or from users."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "The European regulatory framework applicable to a device: MDR (EU 2017/745) or IVDR (EU 2017/746)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Regulatory Framework"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasRiskType> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified risk associated with a medical device, categorised according to the IMDRF nomenclature."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk classification assigned to a medical device based on its intended purpose and associated risks."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "The category of a risk, such as malfunction risk, injury risk, infection risk or diagnostic risk"@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RiskType> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Type"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SafetyAlert
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "A safety communication issued by a manufacturer to healthcare professionals warning about risks associated with a device."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SelfTestDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/InVitroDiagnosticDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An IVD device intended for use by lay persons to perform testing on themselves, such as a glucose monitor."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self Test Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that directly or indirectly led to death, serious deterioration in health, or serious public health threat."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SingleUseDevice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SingleUseDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be used on one individual during a single procedure and then discarded."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Single Use Device"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/UserNotice
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A written notice sent to users or patients providing updated instructions or warnings about a device."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassA
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class A: lowest risk IVD devices, such as general laboratory instruments."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassB
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B"@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR risk class B: moderate risk IVD devices, such as self-test blood glucose monitors."@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassC
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class C: high risk IVD devices, such as HIV and cancer diagnostic tests."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassD
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/IVDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "IVDR risk class D: highest risk IVD devices, such as blood screening tests for infectious diseases."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassI
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class I: lowest risk, generally non-invasive devices."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "Class I"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIII
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class III: highest risk devices, including implantables and life-sustaining devices."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIa
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class IIa: medium risk devices requiring notified body involvement."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIb
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MDRRiskClass> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "MDR risk class IIb: higher medium risk devices with more stringent conformity assessment."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-001
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of ImplantableActiveDevice representing the HeartMate 3 Left Ventricular Assist Device by Medtronic."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-002
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of ActiveImplant representing the Micra AV leadless cardiac pacemaker by Medtronic."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-002> <http://www.w3.org/2000/01/rdf-schema#label> "Micra AV Transcatheter Pacing System"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-003
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-003> <http://www.w3.org/2000/01/rdf-schema#comment> "nstance of ImplantableDevice representing the Portico TAVI system by Abbott."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-003> <http://www.w3.org/2000/01/rdf-schema#label> "Portico Transcatheter Heart Valve"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-004
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-004> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of ImplantableDevice representing the SYNERGY drug-eluting coronary stent by Boston Scientific."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-004> <http://www.w3.org/2000/01/rdf-schema#label> "SYNERGY Stent System"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-005
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-005> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of ActiveImplant representing the ACUITY X4 cardiac resynchronization lead by Boston Scientific."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-005> <http://www.w3.org/2000/01/rdf-schema#label> "ACUITY X4 Quadripolar LV Lead"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-007
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-007> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of ActiveDevice representing the ACUSON Sequoia diagnostic ultrasound system by Siemens Healthineers."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-007> <http://www.w3.org/2000/01/rdf-schema#label> "ACUSON Sequoia Ultrasound"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-016
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-016> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of InVitroDiagnosticDevice representing the cobas e 801 automated immunoassay analyser by Roche."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-016> <http://www.w3.org/2000/01/rdf-schema#label> "cobas e 801 Immunoassay Analyzer"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-021
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MedicalDevice> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-021> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of SelfTestDevice representing the OPTIGA continuous glucose monitor by GE HealthCare."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/DEV-021> <http://www.w3.org/2000/01/rdf-schema#label> "OPTIGA Glucose Monitoring System"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-001
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 LVAD."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "EU-FSCA-2024-000001"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-002
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Voluntary recall of Micra AV lots manufactured between 2022-09 and 2023-03 due to premature battery depletion."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-002> <http://www.w3.org/2000/01/rdf-schema#label> "EU-FSCA-2024-000002"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-008
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-008> <http://www.w3.org/2000/01/rdf-schema#comment> "Software recall of ATERA ventilators with version 2.1.3; mandatory update to version 2.2.0."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-008> <http://www.w3.org/2000/01/rdf-schema#label> "EU-FSCA-2024-000008"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-012
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-012> <http://www.w3.org/2000/01/rdf-schema#comment> "Urgent recall and remote software update of Plum 360 infusion pumps to correct drug library decimal point error."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA-012> <http://www.w3.org/2000/01/rdf-schema#label> "EU-FSCA-2024-000012"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-001
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident: HeartMate 3 LVAD patient developed ischemic stroke 6 months post-implant due to device thrombosis."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "EU-INC-2024-000001"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-002
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident: Micra AV pacemaker reached elective replacement indicator 14 months earlier than specified longevity."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-002> <http://www.w3.org/2000/01/rdf-schema#label> "EU-INC-2024-000002"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-010
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-010> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident: ATERA ventilator software delivered FiO2 6% lower than set value for ARDS patients."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-010> <http://www.w3.org/2000/01/rdf-schema#label> "EU-INC-2024-000010"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-015
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-015> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident: Plum 360 infusion pump delivered 10x heparin dose due to software decimal point error."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/INC-015> <http://www.w3.org/2000/01/rdf-schema#label> "EU-INC-2024-000015"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-001
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of Manufacturer representing Medtronic plc, registered in Ireland under authorisation IE/2017/001234."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-002
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of Manufacturer representing Abbott Medical Devices, registered in Germany under authorisation DE/2017/005678."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-002> <http://www.w3.org/2000/01/rdf-schema#label> "Abbott Medical Devices"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-003
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of Manufacturer representing Siemens Healthineers AG, registered in Germany under authorisation DE/2017/009012."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-003> <http://www.w3.org/2000/01/rdf-schema#label> "Siemens Healthineers AG"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-005
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Manufacturer> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-005> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of Manufacturer representing Roche Diagnostics GmbH, registered in Germany under authorisation DE/2017/007890."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/MAN-005> <http://www.w3.org/2000/01/rdf-schema#label> "Roche Diagnostics GmbH"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-001
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of complete loss of electrical function leading to device shutdown (IMDRF code A0101)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-001> <http://www.w3.org/2000/01/rdf-schema#label> "Device failure - electrical"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-003
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of thrombus formation on device surface causing embolic events (IMDRF code A0201)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-010
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-010> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of software bug causing incorrect dosing, alarming or therapy delivery (IMDRF code A0502)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-010> <http://www.w3.org/2000/01/rdf-schema#label> "Software malfunction"@en .
+# 
+# http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-015
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Risk> .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-015> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of IVD test failing to detect target condition in affected individual (IMDRF code B0102)."@en .
+<http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/RSK-015> <http://www.w3.org/2000/01/rdf-schema#label> "False negative result"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid18 <http://www.w3.org/2003/11/swrl#body> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/SeriousIncident> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/2003/11/swrl#head> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/hasHighRiskFlag> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid27 <http://www.w3.org/2003/11/swrl#body> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> "Critical" .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/severity> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isAssociatedWithRisk> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/Incident> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isCriticalIncident> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid9 <http://www.w3.org/2003/11/swrl#body> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid11 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/involvesDevice> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i> .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid13 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/addressesIncident> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#F> .
+_:genid15 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/FSCA> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/2003/11/swrl#head> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vicky/ontologies/2026/3/ODM/isUnderCorrectiveAction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
